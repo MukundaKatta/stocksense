@@ -1,0 +1,55 @@
+# Dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# Build
+.next/
+out/
+dist/
+build/
+*.tsbuildinfo
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+*.egg-info/
+.eggs/
+
+# ML Models
+packages/forecaster/models/*.pkl
+packages/forecaster/models/*.json
+
+# Turbo
+.turbo/
+
+# Expo
+apps/mobile/.expo/
+apps/mobile/dist/
+
+# Supabase
+packages/supabase/.temp/
+
+# Logs
+*.log
+npm-debug.log*

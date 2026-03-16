@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "incremental": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@stocksense/forecaster/*": ["packages/forecaster/*"],
+      "@stocksense/optimizer/*": ["packages/optimizer/*"],
+      "@stocksense/connectors/*": ["packages/connectors/*"],
+      "@stocksense/supabase/*": ["packages/supabase/*"]
+    }
+  },
+  "exclude": ["node_modules"]
+}
