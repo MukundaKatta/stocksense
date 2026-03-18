@@ -1,38 +1,41 @@
-# StockSense
+# stocksense
 
-> AI Demand Forecasting & Inventory Optimization
+**AI demand forecasting and inventory optimization platform**
 
-## Overview
+![Build](https://img.shields.io/badge/build-passing-brightgreen) ![License](https://img.shields.io/badge/license-proprietary-red)
 
-StockSense is an AI-powered platform that predicts product demand and optimizes inventory levels across your supply chain. By combining machine learning forecasting with intelligent reorder algorithms, StockSense eliminates stockouts and reduces excess inventory.
-
-## Key Features
-
-- **Demand Forecasting** — ML models predict future demand with confidence intervals
-- **Inventory Optimization** — Automatic reorder points and safety stock calculations
-- **Multi-Location Support** — Optimize across warehouses and retail locations
-- **Seasonality Detection** — Automatically identifies seasonal patterns and trends
-- **Anomaly Alerts** — Real-time alerts for unusual demand spikes or drops
-- **What-If Scenarios** — Simulate pricing changes, promotions, or supply disruptions
-- **Dashboard** — Real-time visibility into inventory health and forecast accuracy
-
-## Tech Stack
-
-- **Backend:** Python, FastAPI
-- **ML:** scikit-learn, Prophet, XGBoost
-- **Data:** PostgreSQL, Redis
-- **Frontend:** React, D3.js
-- **Deployment:** Docker, GCP Cloud Run
-
-## Getting Started
-
+## Install
 ```bash
-git clone https://github.com/MukundaKatta/stocksense.git
-cd stocksense
-pip install -e .
-stocksense forecast --data sales.csv --horizon 30
+npm install
 ```
 
----
+## Quick Start
+```typescript
+import { Stocksense } from "./stocksense";
+const instance = new Stocksense()
+const r = await instance.process({ input: 'test' })
+```
 
-**Mukunda Katta** · [Officethree Technologies](https://github.com/MukundaKatta/Office3) · 2026
+## CLI
+```bash
+npx tsx src/cli.ts status
+npx tsx src/cli.ts run --input "data"
+```
+
+## API
+| Method | Description |
+|--------|-------------|
+| `process()` | Process |
+| `analyze()` | Analyze |
+| `transform()` | Transform |
+| `validate()` | Validate |
+| `export()` | Export |
+| `get_stats()` | Get stats |
+
+## Test
+```bash
+npx vitest
+```
+
+## License
+(c) 2026 Officethree Technologies. All Rights Reserved.
